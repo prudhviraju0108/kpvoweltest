@@ -1,4 +1,6 @@
 #!/usr/bin/python
+import sys
+word=sys.argv[1]
 def vowelcounter(word):
 	word=word.lower()
 	vowels=['a','e','i','o','u']
@@ -7,4 +9,4 @@ def vowelcounter(word):
 			count=word.count(i)
 			print (i,count)
 print("Now printing number of vowels")
-vowelcounter('prudhvI Raju')
+vowelcounter(word)
